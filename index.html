@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <title>Infinite Slideshow : non-degree programmer</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        .sertifikat .container {
+        .container {
             margin: 0 auto;
             width: 60%;
             height: 400px;
@@ -16,23 +21,23 @@
             overflow: hidden;
         }
 
-        .sertifikat .slides {
+        .slides {
             display: flex;
             height: 100%;
         }
 
-        .sertifikat .slide {
+        .slide {
             min-width: 100%;
             position: relative;
         }
 
-        .sertifikat .slide img {
+        .slide img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .sertifikat .slide-controls {
+        .slide-controls {
             position: absolute;
             top: 50%;
             left: 0;
@@ -43,8 +48,8 @@
             align-items: center;
         }
 
-        .sertifikat #next-btn,
-        .sertifikat #prev-btn {
+        #next-btn,
+        #prev-btn {
             cursor: pointer;
             background: transparent;
             font-size: 30px;
@@ -53,12 +58,12 @@
             color: white;
         }
 
-        .sertifikat #next-btn:focus,
-        .sertifikat #prev-btn:focus {
+        #next-btn:focus,
+        #prev-btn:focus {
             outline: none;
         }
 
-        .sertifikat .slide-content {
+        .slide-content {
             position: absolute;
             top: 50%;
             left: 50px;
